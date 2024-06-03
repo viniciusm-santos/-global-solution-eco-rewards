@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16D2FEAF-42E5-14A0-B209-00BDC4EE65CC" name="T_ER_RECYCLING">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>38E6312A-5234-D2B3-1A30-063E5CE21454</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_recycling" id="BEC666E5-F250-59CA-B727-69ECD1466D6A">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>012510A5-0F50-7BD3-FC81-BE4AD1C12576</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_point" id="3250A76B-935B-1E65-5DD1-BF8A3B79E084">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>3A097B77-D951-279A-1DAB-527925E6EA0F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E25B295F-A6B8-2B81-D7ED-0C1187FCB29E" referredColumn="BF2B73E9-850B-4291-A58C-6430666F08E3"/>
+</associations>
+</Column>
+<Column name="weight" id="652B7EBA-4E28-DEC4-475F-9D83221C11B7">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>055CCEBD-47CF-1A67-6CD4-B35C254AA508</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_recycling" id="7784F1F2-0D62-FF27-6056-FDA1E4B2AEBE">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>CB1EAED3-0D47-7C66-79E9-3CE2A9828A59</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8B2C21D-70F6-24C0-4185-F63D59BC426D" name="T_ER_RECYCLING_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E14FEC37-9CBF-C3EB-040D-57659DD703CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEC666E5-F250-59CA-B727-69ECD1466D6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37206FD9-F73C-985E-A56F-4403B3E4DFFB" name="FK_POINT_RECYCLING">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>A25AFA29-5160-DC65-657F-225C73660305</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3250A76B-935B-1E65-5DD1-BF8A3B79E084"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

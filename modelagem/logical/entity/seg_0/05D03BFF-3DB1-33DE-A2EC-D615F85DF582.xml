@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05D03BFF-3DB1-33DE-A2EC-D615F85DF582" name="T_ER_COLLECTION_POINT">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:31:33 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_point" id="63235F8A-9F2A-D495-8DC8-D6A6DDBEA5A2">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:31:58 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_point" id="E7ADEBA7-2FF2-E22E-7BCE-3E6611BD41C4">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:31:59 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_address" id="28E9E1A3-C15F-E182-6CC8-04075277A940">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 18:51:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8EDC462B-D9EC-E7CE-CBA8-C23FF97DD9C7" name="T_ER_COLLECTION_POINT PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:32:22 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>63235F8A-9F2A-D495-8DC8-D6A6DDBEA5A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

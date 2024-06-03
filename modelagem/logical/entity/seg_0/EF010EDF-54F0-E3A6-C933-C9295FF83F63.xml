@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF010EDF-54F0-E3A6-C933-C9295FF83F63" name="T_ER_TOKEN_TRANSACTION">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:51:21 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_transaction" id="E8803A63-C7C5-5696-5FAD-97F92A188387">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:51:34 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_user" id="E12AC300-EF0F-DD75-5956-3D46A427B75B">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 18:54:41 UTC</createdTime>
+<generatorID>8659D324-8989-42ED-1B6B-3909B4BE0A41</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<referedAttribute>4CD17F3F-1657-A8CC-A035-D89E959EC544</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_recycling" id="A84331A6-DBDD-36DA-FCD2-750C3D1F3D08">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 18:53:53 UTC</createdTime>
+<generatorID>518A65EF-E956-EEEF-C493-DCD884F4AF74</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<referedAttribute>012510A5-0F50-7BD3-FC81-BE4AD1C12576</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_token" id="221EB99A-762E-7AA4-CA0D-3962BCCFA22B">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:51:37 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_transaction" id="34C66166-0E90-BAB1-7674-A7B97455EAEB">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:51:37 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E95A185A-4F63-DD9E-7D62-82044A2ACF6F" name="T_ER_TOKEN_TRANSACTION PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 17:51:50 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E8803A63-C7C5-5696-5FAD-97F92A188387</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

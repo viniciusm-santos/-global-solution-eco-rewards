@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EXCHANGE_BENEFIT" directorySegmentName="seg_0" id="E0807EEC-FB11-3A6D-079A-CA4C7158C265">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 18:44:00 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<sourcePk>121F7CD4-3940-E28A-74DC-ED4E6C121A58</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>75761F8A-25A2-7CB6-312C-967E8104776E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4F08D580-55F5-2AD6-19B0-7C0224C5225C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAEC33DD-B735-8B35-DDE3-32B34564BAD4" name="T_ER_BENEFIT">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>75761F8A-25A2-7CB6-312C-967E8104776E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_benefit" id="C4A4A726-7468-9CAC-2A63-653D6F345F4B">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>98FA6F7D-E892-381C-B874-5AACE58148E6</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_benefit" id="F59C8C81-EF7E-20AA-6227-E89AD06C52F3">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>37A19E01-BD74-3042-3810-F22E7EE9CE30</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_benefit" id="3F27E37F-3710-1AC6-BEF5-089F210ED63B">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>4403DF08-74A7-DFF4-4165-B0F5E06B904D</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_tokens" id="C9AB5867-FBCB-AE84-CEBA-31DBE9E4B088">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>734B9009-3D5A-83BE-E523-D4FA5E043A6E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="099ED7E7-4046-6A14-EE0A-9047F56F4901" name="T_ER_BENEFIT_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>121F7CD4-3940-E28A-74DC-ED4E6C121A58</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4A4A726-7468-9CAC-2A63-653D6F345F4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

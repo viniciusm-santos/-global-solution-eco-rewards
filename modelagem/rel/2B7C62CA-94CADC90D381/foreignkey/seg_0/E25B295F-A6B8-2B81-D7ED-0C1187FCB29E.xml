@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E25B295F-A6B8-2B81-D7ED-0C1187FCB29E" containerWithKeyObject="16D2FEAF-42E5-14A0-B209-00BDC4EE65CC" localFKIndex="37206FD9-F73C-985E-A56F-4403B3E4DFFB" name="FK_POINT_RECYCLING">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>A25AFA29-5160-DC65-657F-225C73660305</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>T_ER_COLLECTION_POINT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BAE82807-99CF-8029-6C87-D8830295FBCE</referredTableID>
+<keyObject>BFFE4342-40EF-B2B5-4F62-6C14A2A4C449</keyObject>
+<referredKeyID>BFFE4342-40EF-B2B5-4F62-6C14A2A4C449</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_point</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

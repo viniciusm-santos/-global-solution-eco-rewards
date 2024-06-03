@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAE82807-99CF-8029-6C87-D8830295FBCE" name="T_ER_COLLECTION_POINT">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>05D03BFF-3DB1-33DE-A2EC-D615F85DF582</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_point" id="BF2B73E9-850B-4291-A58C-6430666F08E3">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>63235F8A-9F2A-D495-8DC8-D6A6DDBEA5A2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_point" id="47C6425B-183B-5172-452A-719014EF89E3">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E7ADEBA7-2FF2-E22E-7BCE-3E6611BD41C4</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_address" id="A372374C-4EC8-AEAC-A8D2-4C9F808A3A00">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>28E9E1A3-C15F-E182-6CC8-04075277A940</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFFE4342-40EF-B2B5-4F62-6C14A2A4C449" name="T_ER_COLLECTION_POINT_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>8EDC462B-D9EC-E7CE-CBA8-C23FF97DD9C7</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF2B73E9-850B-4291-A58C-6430666F08E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

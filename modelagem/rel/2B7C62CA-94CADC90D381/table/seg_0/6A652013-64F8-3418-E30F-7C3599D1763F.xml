@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A652013-64F8-3418-E30F-7C3599D1763F" name="T_ER_EXCHANGE">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>4F08D580-55F5-2AD6-19B0-7C0224C5225C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_exchange" id="C025DCF9-CA4E-DE88-0E95-DC03FBE71448">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>13589C6C-021B-17F6-9D60-6439D210EC96</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_user" id="5C20C748-CFBE-1EA3-115B-D85896CA8FC2">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>D384F493-858A-6E25-1474-FF1EDA70846E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5EADB85-0E3A-B586-737B-F9C3F8B375B3" referredColumn="AD0BF5C3-CBE5-01BA-8A25-BF52B6666608"/>
+</associations>
+</Column>
+<Column name="cd_benefit" id="D500B7C0-2439-93EE-12AE-888DFFA02794">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>EDD3D4BF-22E0-02ED-2A47-DCDBDE0052AB</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06835BBB-8769-A9F4-BA75-7EEC938D5F90" referredColumn="C4A4A726-7468-9CAC-2A63-653D6F345F4B"/>
+</associations>
+</Column>
+<Column name="dt_exchange" id="D254BC7D-D1D0-071F-F441-EEC3FEA61168">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>DE438DD3-E59A-89B3-37C4-53B1D4B1673B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B8566C6-6473-CF66-20C8-13F3AE76722C" name="T_ER_EXCHANGE_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>04979D50-3CE7-0D4B-F565-14D79829BA6C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C025DCF9-CA4E-DE88-0E95-DC03FBE71448"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34AF22DB-9131-7F3E-7EBD-6D1B163A9BCD" name="FK_EXCHANGE_BENEFIT">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E0807EEC-FB11-3A6D-079A-CA4C7158C265</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D500B7C0-2439-93EE-12AE-888DFFA02794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5B87840-A994-AC4B-CD27-ED6A3C733136" name="FK_USER_EXCHANGE">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:53 UTC</createdTime>
+<generatorID>E80CCB27-036F-995E-84F3-3F146934FF71</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C20C748-CFBE-1EA3-115B-D85896CA8FC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

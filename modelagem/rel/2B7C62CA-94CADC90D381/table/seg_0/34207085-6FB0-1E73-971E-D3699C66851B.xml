@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34207085-6FB0-1E73-971E-D3699C66851B" name="T_ER_PASSWORD">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>322E9ABD-7427-6395-BDAD-DD2DBA058B2B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_password" id="17CBA79E-D244-82C7-CC84-776259372690">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>3C89EF79-FC0E-B1FD-BE11-B363055FA58E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_user" id="80D940D3-066B-9A4F-3233-4E8FD525FC5C">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>94D5A0A3-D236-1068-65FC-99D4100E1667</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E583FBA-30E8-4AB6-CBC7-3E85A31142F0" referredColumn="AD0BF5C3-CBE5-01BA-8A25-BF52B6666608"/>
+</associations>
+</Column>
+<Column name="ds_password" id="0BF9580F-7C27-4C3B-7F3B-8D98C8E1FEE4">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>522FA008-C232-FA78-D2D5-517FA57FF942</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="822A2B8F-9AFC-B8FD-123C-31F9D33ED28D" name="T_ER_PASSWORD_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E714BA3A-A384-A76A-C286-AF84AE5E388D</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17CBA79E-D244-82C7-CC84-776259372690"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5043F383-B36F-E99A-34D3-5CA6C784CC43" name="T_ER_PASSWORD__IDX">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:53 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4B27F376-D583-3292-D3FB-D3BDD5CDDEA5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="80D940D3-066B-9A4F-3233-4E8FD525FC5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA2269BC-C65F-D098-D7FB-573BA5B65802" name="FK_USER_PASSWORD">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:53 UTC</createdTime>
+<generatorID>4B27F376-D583-3292-D3FB-D3BDD5CDDEA5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80D940D3-066B-9A4F-3233-4E8FD525FC5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

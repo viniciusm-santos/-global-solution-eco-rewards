@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_USER_TRANSACTION" directorySegmentName="seg_0" id="8659D324-8989-42ED-1B6B-3909B4BE0A41">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 18:54:41 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<sourcePk>4C672D4D-F435-45EC-9E1A-84BBA83DC9AC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B04F76CF-CC94-FB21-729B-DA4A6811E931</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EF010EDF-54F0-E3A6-C933-C9295FF83F63</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

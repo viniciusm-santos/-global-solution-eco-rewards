@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DFFB477-2DDC-7AD7-5912-E8301BD8B1B4" containerWithKeyObject="487E0AB0-0A1E-FBCC-683B-9911286B58A4" localFKIndex="40CB8299-49FF-54C0-D60D-39C9EB9FCE9A" name="FK_RECYCLING_TRANSACTION">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>518A65EF-E956-EEEF-C493-DCD884F4AF74</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>T_ER_RECYCLING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16D2FEAF-42E5-14A0-B209-00BDC4EE65CC</referredTableID>
+<keyObject>B8B2C21D-70F6-24C0-4185-F63D59BC426D</keyObject>
+<referredKeyID>B8B2C21D-70F6-24C0-4185-F63D59BC426D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_recycling</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

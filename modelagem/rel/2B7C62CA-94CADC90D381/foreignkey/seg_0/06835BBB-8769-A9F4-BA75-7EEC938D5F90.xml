@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="06835BBB-8769-A9F4-BA75-7EEC938D5F90" containerWithKeyObject="6A652013-64F8-3418-E30F-7C3599D1763F" localFKIndex="34AF22DB-9131-7F3E-7EBD-6D1B163A9BCD" name="FK_EXCHANGE_BENEFIT">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E0807EEC-FB11-3A6D-079A-CA4C7158C265</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>T_ER_BENEFIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CAEC33DD-B735-8B35-DDE3-32B34564BAD4</referredTableID>
+<keyObject>099ED7E7-4046-6A14-EE0A-9047F56F4901</keyObject>
+<referredKeyID>099ED7E7-4046-6A14-EE0A-9047F56F4901</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_benefit</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

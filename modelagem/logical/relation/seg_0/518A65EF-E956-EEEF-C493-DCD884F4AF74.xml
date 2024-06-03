@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RECYCLING_TRANSACTION" directorySegmentName="seg_0" id="518A65EF-E956-EEEF-C493-DCD884F4AF74">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 18:53:53 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="2B7C62CA-6ED8-1D14-0C99-94CADC90D381" value="true"/>
+</engineerTo>
+<sourcePk>E14FEC37-9CBF-C3EB-040D-57659DD703CA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>38E6312A-5234-D2B3-1A30-063E5CE21454</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EF010EDF-54F0-E3A6-C933-C9295FF83F63</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

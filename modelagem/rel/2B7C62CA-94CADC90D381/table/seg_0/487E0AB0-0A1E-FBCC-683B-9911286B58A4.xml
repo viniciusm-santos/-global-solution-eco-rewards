@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="487E0AB0-0A1E-FBCC-683B-9911286B58A4" name="T_ER_TOKEN_TRANSACTION">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>EF010EDF-54F0-E3A6-C933-C9295FF83F63</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_transaction" id="9DAA6320-A2B7-50BD-AAA0-642B044DF697">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E8803A63-C7C5-5696-5FAD-97F92A188387</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_user" id="5324162C-C857-FF59-EFD8-A82616B91D76">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>E12AC300-EF0F-DD75-5956-3D46A427B75B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="952D2B50-5F05-C134-4464-6E2F1B722CEF" referredColumn="AD0BF5C3-CBE5-01BA-8A25-BF52B6666608"/>
+</associations>
+</Column>
+<Column name="id_recycling" id="5D80201B-D68C-73F2-21BD-25DD74B04F0F">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>A84331A6-DBDD-36DA-FCD2-750C3D1F3D08</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DFFB477-2DDC-7AD7-5912-E8301BD8B1B4" referredColumn="BEC666E5-F250-59CA-B727-69ECD1466D6A"/>
+</associations>
+</Column>
+<Column name="qt_token" id="E31F3374-43CF-08F4-9645-85430FB773DF">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>221EB99A-762E-7AA4-CA0D-3962BCCFA22B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_transaction" id="97450B91-C7C1-7898-7AFB-F4F73F4DE00A">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>34C66166-0E90-BAB1-7674-A7B97455EAEB</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95563BD4-43A5-9256-F228-56AF8D9C194F" name="T_ER_TOKEN_TRANSACTION_PK">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-05-31 19:12:52 UTC</createdTime>
+<generatorID>E95A185A-4F63-DD9E-7D62-82044A2ACF6F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DAA6320-A2B7-50BD-AAA0-642B044DF697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0772CC84-CA40-829F-BA2E-BF407E6D827A" name="T_ER_TOKEN_TRANSACTION__IDX">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>518A65EF-E956-EEEF-C493-DCD884F4AF74</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5D80201B-D68C-73F2-21BD-25DD74B04F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40CB8299-49FF-54C0-D60D-39C9EB9FCE9A" name="FK_RECYCLING_TRANSACTION">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>518A65EF-E956-EEEF-C493-DCD884F4AF74</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D80201B-D68C-73F2-21BD-25DD74B04F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3290C7DB-FB9A-362E-C0FA-65931E7639A7" name="FK_USER_TRANSACTION">
+<createdBy>Bruno</createdBy>
+<createdTime>2024-06-01 19:06:52 UTC</createdTime>
+<generatorID>8659D324-8989-42ED-1B6B-3909B4BE0A41</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5324162C-C857-FF59-EFD8-A82616B91D76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
