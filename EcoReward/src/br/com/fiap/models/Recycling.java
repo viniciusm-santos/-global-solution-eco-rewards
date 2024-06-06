@@ -4,18 +4,20 @@ import java.time.LocalDateTime;
 
 public class Recycling {
     private int id;
-    private int collectionPointId;
+    private CollectionPoint collectionPoint;
+    private Material material;
     private float weight; // in grams
     private LocalDateTime date;
 
-    public Recycling(int collectionPointId, float weight, LocalDateTime date) {
-        this.collectionPointId = collectionPointId;
+    public Recycling(CollectionPoint collectionPoint, Material material, float weight, LocalDateTime date) {
+        this.collectionPoint = collectionPoint;
+        this.material = material;
         this.weight = weight;
         this.date = date;
     }
 
     public int calculateTokens() {
-        return (int) (weight * 10);
+        return (int) (weight * material.getTax());
     }
 
     // Getters and Setters
@@ -35,12 +37,12 @@ public class Recycling {
         this.weight = weight;
     }
 
-    public int getCollectionPointId() {
-        return collectionPointId;
+    public CollectionPoint getCollectionPoint() {
+        return collectionPoint;
     }
 
-    public void setCollectionPointId(int pointId) {
-        this.collectionPointId = pointId;
+    public void setCollectionPointI(CollectionPoint collectionPoint) {
+        this.collectionPoint = collectionPoint;
     }
 
     public int getId() {

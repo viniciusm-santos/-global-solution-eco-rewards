@@ -1,14 +1,28 @@
 package br.com.fiap;
 
 import br.com.fiap.models.*;
+import br.com.fiap.models.user.Admin;
+import br.com.fiap.models.user.Customer;
 
 import java.time.LocalDateTime;
 
 public class Program {
     public static void main(String[] args) {
+
+        // Create a collection point
+        CollectionPoint point = new CollectionPoint("Beach Cleanup", "123 Ocean Ave");
+        System.out.println("-----Collection Point created-----\nName: " + point.getName()
+                + "\nAddress: " + point.getAddress());
+
+        // Create an admin
+        Admin admin = new Admin("Jorge", "Carlos", "jorge.carlos@email.com", point);
+        System.out.println("-----Admin created-----\nName: " + admin.getName() + "\nEmail: " + admin.getEmail()
+                + "\nCollection Point: " + admin.getCollectionPoint().getName());
+
         // Create a user
-        User user = new User("John Doe", "john.doe@example.com");
-        System.out.println("-----User created-----\nName: " + user.getName() + "\nEmail: " + user.getEmail());
+        Customer user = new Customer("David", "Leo", "david.leo@email.com", 0, 0);
+        System.out.println("-----User created-----\nName: " + user.getName() + "\nEmail: " + user.getEmail()
+                + "\nScore: " + user.getScore() + "\nGoal: " + user.getGoal());
 
         // Create user's password
         Password password = new Password(user.getId(), "my_secure_password");
@@ -21,28 +35,34 @@ public class Program {
             System.out.println("Invalid password.");
         }
 
-        // Create a collection point
-        CollectionPoint point = new CollectionPoint("Beach Cleanup", "123 Ocean Ave");
-        System.out.println("-----Collection Point created-----\nName: " + point.getName() + "\nAddress: " + point.getAddress());
+        // Register a material
+        Material glass = new Material("Glass", "All types of glass", 25);
+        System.out.println("-----Material created-----\nName: " + glass.getName() + "\nDescription: "
+                + glass.getDescription() + "\nTax: " + glass.getTax());
 
         // Register a recycle
-        Recycling recycling = new Recycling(point.getId(), 5.0f, LocalDateTime.now());
-        System.out.println("-----Recycling created-----\nWeight: " + recycling.getWeight() + "\nRecycling date: " + recycling.getDate());
+        Recycling recycling = new Recycling(point, glass,5.0f, LocalDateTime.now());
+        System.out.println("-----Recycling created-----\nWeight: " + recycling.getWeight()
+                + "\nRecycling date: " + recycling.getDate());
 
         int tokensEarned = recycling.calculateTokens();
-        System.out.println("-----Tokens earned-----\nValue: " + recycling.calculateTokens());
+        System.out.println("-----Tokens earned-----\nValue: "
+                + recycling.calculateTokens());
 
 
         // Register a token transaction
-        TokenTransaction transaction = new TokenTransaction(user.getId(), recycling.getId(), tokensEarned, LocalDateTime.now());
-        System.out.println("-----Transaction created-----\nTransaction date: " + transaction.getDate() + "\nToken quantity: " + transaction.getTokenQuantity());
+        TokenTransaction transaction = new TokenTransaction(user.getId(), recycling.getId(),
+                tokensEarned, LocalDateTime.now());
+        System.out.println("-----Transaction created-----\nTransaction date: "
+                + transaction.getDate() + "\nToken quantity: " + transaction.getTokenQuantity());
 
         // Add token to user's balance
         user.addTokens(tokensEarned);
 
         // Create a benefit
         Benefit benefit = new Benefit("Discount at Kiosk", "10% off on all items", 30);
-        System.out.println("-----Benefit created-----\nName: " + benefit.getName() + "\nDescription: " + benefit.getDescription() + "\nToken cost: " + benefit.getTokenValue());
+        System.out.println("-----Benefit created-----\nName: " + benefit.getName() + "\nDescription: "
+                + benefit.getDescription() + "\nToken cost: " + benefit.getTokenValue());
 
         // Exchange tokens for a benefit
         try {
@@ -55,7 +75,7 @@ public class Program {
         }
 
         // Final user's total balance
-        System.out.println("-----Final token balance-----\nValue: " + user.getTotalBalance());
+        System.out.println("-----Final token balance-----\nValue: " + user.getScore());
     }
 }
 

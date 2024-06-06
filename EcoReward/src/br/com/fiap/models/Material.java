@@ -1,6 +1,6 @@
 package br.com.fiap.models;
 
-public abstract class Material {
+public class Material {
     private int id;
     private String name;
     private String description;
@@ -9,8 +9,7 @@ public abstract class Material {
     public Material() {
     }
 
-    public Material(int id, String name, String description, double tax) {
-        this.id = id;
+    public Material(String name, String description, double tax) {
         this.name = name;
         this.description = description;
         this.tax = tax;

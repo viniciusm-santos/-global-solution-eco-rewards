@@ -3,6 +3,7 @@ package br.com.fiap.models.user;
 public class User {
     private int id;
     private String name;
+    private String lastName;
     private String email;
     private String password;
     private UserType type;
@@ -10,8 +11,16 @@ public class User {
     public User() {
     }
 
-    public User(String name, String email, String password, UserType type) {
+    public User(String name, String lastName, String email, UserType type) {
         this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.type = type;
+    }
+
+    public User(String name, String lastName, String email, String password, UserType type) {
+        this.name = name;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.type = type;
