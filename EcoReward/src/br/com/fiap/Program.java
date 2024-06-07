@@ -17,6 +17,7 @@ public class Program {
         // Create an admin
         Admin admin = new Admin("Jorge", "Carlos", "jorge.carlos@email.com", point);
         System.out.println("-----Admin created-----\nName: " + admin.getName() + "\nEmail: " + admin.getEmail()
+                + "\nType: " + admin.getType()
                 + "\nCollection Point: " + admin.getCollectionPoint().getName());
 
         // Create a user
@@ -36,7 +37,7 @@ public class Program {
         }
 
         // Register a material
-        Material glass = new Material("Glass", "All types of glass", 25);
+        Material glass = new Material("Glass", "All types of glass", 25.5f);
         System.out.println("-----Material created-----\nName: " + glass.getName() + "\nDescription: "
                 + glass.getDescription() + "\nTax: " + glass.getTax());
 

@@ -1,6 +1,9 @@
 package br.com.fiap.models.user;
 
 public enum UserType {
-    ADMIN,
-    CUSTOMER
+    ADMIN(0),
+    CUSTOMER(1);
+
+    UserType(int i) {
+    }
 }

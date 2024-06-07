@@ -3,17 +3,16 @@ package br.com.fiap.models.user;
 import br.com.fiap.models.Benefit;
 
 public class Customer extends User {
-    private float score;
-    private float goal;
+    private int score;
+    private int goal;
 
-    public Customer(String name, String lastName, String email, float score, float goal) {
+    public Customer(String name, String lastName, String email, int score, int goal) {
         super(name, lastName, email, UserType.CUSTOMER);
         this.score = score;
         this.goal = goal;
-
     }
 
-    public Customer(String name, String lastName, String email, String password, UserType type, float score, float goal) {
+    public Customer(String name, String lastName, String email, String password, UserType type, int score, int goal) {
         super(name, lastName, email, password, type);
         this.score = score;
         this.goal = goal;
@@ -24,7 +23,7 @@ public class Customer extends User {
         return score;
     }
 
-    public void setScore(float score) {
+    public void setScore(int score) {
         this.score = score;
     }
 
@@ -32,7 +31,7 @@ public class Customer extends User {
         return goal;
     }
 
-    public void setGoal(float goal) {
+    public void setGoal(int goal) {
         this.goal = goal;
     }
 

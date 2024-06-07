@@ -22,4 +22,23 @@ public class Admin extends User {
     public void setCollectionPoint(CollectionPoint collectionPoint) {
         this.collectionPoint = collectionPoint;
     }
+
+    public void addCollectionPoint(CollectionPoint collectionPoint) {
+        this.collectionPoint = new CollectionPoint("Farol da Barra",
+                "Largo do Farol da Barra, S/Nº Forte De Santo Antônio Da Barra, Salvador, Bahia 40140-650");
+    }
+
+    public void removeCollectionPoint(CollectionPoint collectionPoint) {
+        this.collectionPoint = null;
+    }
+
+    public void editCollectionPoint(String name, String address) {
+        if (name != null || !name.isEmpty()) {
+            this.collectionPoint.setName(name);
+        }
+
+        if (address != null || !address.isEmpty()) {
+            this.collectionPoint.setAddress(address);
+        }
+    }
 }
